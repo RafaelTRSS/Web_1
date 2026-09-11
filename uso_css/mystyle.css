@@ -1,0 +1,91 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="ATV_Orlando.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+    color: black;
+    margin: 30px;
+    }
+    .teste{
+  
+    background:rgb(131, 131, 131);
+    margin-right: 40px;
+    }
+    .teste2{
+    background:rgb(118, 119, 118);
+    margin-right: 650px;
+    
+  
+    }
+    .teste3{
+
+      background-color: black;
+
+
+
+    }
+
+            /* Classes começam com PONTO (.) */
+            /* Aplica o mesmo estilo para todos os elementos que usam essa classe */
+            .cartao-noticia {
+                background-color: #ffffff;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 8px solid rgb(89, 0, 255);
+            }
+            .cartao-esportivo {
+                background-color: #ffffff;
+                padding: 25px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+            /* IDs começam com CERQUILHA (#) */
+            /* Aplica o estilo APENAS para aquele elemento específico e único */
+            #noticia-urgente {
+                border: 8px solid rgb(25, 0, 255);
+                background-color: #fbff00;
+                
+            }
+  </style>
+  <title>Atividade do Orlando</title>
+</head>
+
+<body class="teste3">
+  <br>
+  <h1 class="teste">
+    Teste de conhecimento sobre o que foi ensinado atá o momento
+  </h1>
+  <br>
+  <h1 class="teste2">ETEC - MOOCA</h2>
+    <div class="cartao-noticia">
+        <h2>Notícia 1</h2>
+        <p>Hoje está um dia frio e chuvoso.</p>
+    </div>
+
+    <!-- Usando a classe para o visual padrão E o id para o destaque único -->
+    <div class="cartao-noticia" id="noticia-urgente">
+        <h2>URGENTE!</h2>
+        <p>Esta notícia é especial.</p>
+    </div>
+
+    <!-- Outro cartão comum com a mesma classe -->
+    <div class="cartao-noticia">
+        <h2>Notícia 3</h2>
+        <p>Há uma cobra em sua bota.</p>
+    </div>
+
+  <p>
+    Our HTML editor updates the webview automatically in real-time as you write code.
+  </p>
+  <script src="script.js"></script>
+</body>
+
+</html>
