@@ -1,0 +1,208 @@
+
+/* VARIÁVEIS */
+:root {
+    --primary-blue: #005A9C;     
+    --hyperlink-blue: #0000FF;   
+    --text-dark: #1A1A1A;        
+    --bg-light: #F8F9FA;        
+    --bg-white: #FFFFFF;         
+    --border-color: #E2E8F0;     
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main), sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*  2. CABEÇALHO E MENU DE NAVEGAÇÃO */
+.header {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--hyperlink-blue);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--primary-blue);
+}
+
+/* TÍTULOS E ESTRUTURA GERAL*/
+h1, h2, h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* 4. GALERIA DE IMAGENS (História e Páginas) */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+/*  PÁGINA 2 (TERMINAL RETRO)*/
+.terminal-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.terminal-box {
+    background-color: #1E1E1E; 
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    color: #A9DC76; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-header {
+    background-color: #2D2D2D;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.red { background-color: #FF5F56; }
+.yellow { background-color: #FFBD2E; }
+.green { background-color: #27C93F; }
+
+.terminal-title {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.terminal-body {
+    padding: 20px;
+}
+
+.terminal-body p {
+    margin-bottom: 10px;
+}
+
+.highlight-green {
+    font-weight: bold;
+    color: #27C93F;
+}
+
+.img-terminal {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 15px;
+    opacity: 0.8;
+    filter: contrast(1.2);
+}
+
+/* TABELA W3SCHOOLS   */
+#tabela-w3 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#tabela-w3 td, 
+#tabela-w3 th {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+#tabela-w3 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabela-w3 tr:hover {
+    background-color: #e6f2ff;
+}
+
+#tabela-w3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #005A9C;
+    color: white;
+}
+
+/* RODAPÉ (FOOTER) */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--bg-white);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.retrato-perfil {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;     
+    border-radius: 8px; 
+    border: 2px solid var(--primary-blue);
+    display: block;
+    margin: 0 auto;  
+}
